@@ -878,6 +878,158 @@
       width: 100%;
     }
 
+    /* ========== PRICING SECTION ========== */
+    .pricing {
+      background: var(--bg-primary);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .pricing-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--border-hover);
+      box-shadow: var(--shadow-md);
+    }
+
+    .pricing-card.featured {
+      border-color: var(--accent-primary);
+      box-shadow: var(--shadow-glow);
+      transform: scale(1.04);
+    }
+
+    .pricing-card.featured:hover {
+      transform: scale(1.04) translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .pricing-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent-gradient);
+      color: var(--bg-primary);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 20px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .pricing-header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .pricing-header h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .pricing-header .pricing-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .pricing-price {
+      text-align: center;
+      padding: 20px 0;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .pricing-price .currency {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+
+    .pricing-price .amount {
+      font-size: 3rem;
+      font-weight: 900;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .pricing-price .period {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-left: 4px;
+    }
+
+    .pricing-features {
+      flex: 1;
+      margin-bottom: 28px;
+    }
+
+    .pricing-features li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 0;
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    .pricing-features li:last-child {
+      border-bottom: none;
+    }
+
+    .pricing-features li i {
+      font-size: 0.8rem;
+      width: 20px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .pricing-features li .fa-check {
+      color: #34d399;
+    }
+
+    .pricing-features li .fa-times {
+      color: #f87171;
+    }
+
+    .pricing-features li.disabled {
+      color: var(--text-muted);
+      opacity: 0.5;
+    }
+
+    .pricing-btn {
+      width: 100%;
+      justify-content: center;
+      padding: 14px 28px;
+    }
+
+    .pricing-note {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 32px;
+    }
+
     /* ========== CTA SECTION ========== */
     .cta {
       padding: 100px 0;
@@ -1209,6 +1361,20 @@
         grid-template-columns: 1fr;
       }
 
+      .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+      }
+
+      .pricing-card.featured {
+        transform: none;
+      }
+
+      .pricing-card.featured:hover {
+        transform: translateY(-8px);
+      }
+
       .footer-grid {
         grid-template-columns: 1fr;
       }
@@ -1306,6 +1472,7 @@
         <a href="#home" class="active">Home</a>
         <a href="#services">Services</a>
         <a href="#portfolio">Portfolio</a>
+        <a href="#pricing">Pricing</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
         <div class="nav-cta">
@@ -1573,6 +1740,90 @@
           </a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Pricing</span>
+        <h2 class="section-title">Paket Jasa <span class="gradient-text">Freelance</span></h2>
+        <p class="section-subtitle">Pilih paket yang sesuai dengan kebutuhan proyekmu. Harga bisa disesuaikan tergantung kompleksitas.</p>
+      </div>
+      <div class="pricing-grid">
+        <!-- STARTER -->
+        <div class="pricing-card reveal">
+          <div class="pricing-header">
+            <h3>Starter</h3>
+            <p class="pricing-desc">Cocok untuk landing page & website statis</p>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">Rp</span>
+            <span class="amount">500K</span>
+            <span class="period">/proyek</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Hingga 3 halaman</li>
+            <li><i class="fas fa-check"></i> Desain responsif</li>
+            <li><i class="fas fa-check"></i> HTML + CSS + JS</li>
+            <li><i class="fas fa-check"></i> Integrasi WhatsApp</li>
+            <li><i class="fas fa-check"></i> 2x revisi</li>
+            <li><i class="fas fa-check"></i> Pengerjaan 3–5 hari</li>
+            <li class="disabled"><i class="fas fa-times"></i> CMS / Admin panel</li>
+            <li class="disabled"><i class="fas fa-times"></i> Database & backend</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline pricing-btn">Pilih Starter</a>
+        </div>
+        <!-- PROFESSIONAL -->
+        <div class="pricing-card featured reveal">
+          <div class="pricing-badge">Populer</div>
+          <div class="pricing-header">
+            <h3>Professional</h3>
+            <p class="pricing-desc">Website dinamis dengan CMS & backend</p>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">Rp</span>
+            <span class="amount">1.5JT</span>
+            <span class="period">/proyek</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Hingga 7 halaman</li>
+            <li><i class="fas fa-check"></i> Desain responsif & custom</li>
+            <li><i class="fas fa-check"></i> Laravel / PHP backend</li>
+            <li><i class="fas fa-check"></i> Admin dashboard (CMS)</li>
+            <li><i class="fas fa-check"></i> Database MySQL</li>
+            <li><i class="fas fa-check"></i> 5x revisi</li>
+            <li><i class="fas fa-check"></i> Pengerjaan 7–14 hari</li>
+            <li class="disabled"><i class="fas fa-times"></i> E-commerce & payment</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary pricing-btn">Pilih Professional</a>
+        </div>
+        <!-- PREMIUM -->
+        <div class="pricing-card reveal">
+          <div class="pricing-header">
+            <h3>Premium</h3>
+            <p class="pricing-desc">Full-stack web app & e-commerce</p>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">Rp</span>
+            <span class="amount">3JT</span>
+            <span class="period">/proyek</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Halaman unlimited</li>
+            <li><i class="fas fa-check"></i> Desain responsif & custom</li>
+            <li><i class="fas fa-check"></i> Full-stack (Laravel + JS)</li>
+            <li><i class="fas fa-check"></i> Admin dashboard lengkap</li>
+            <li><i class="fas fa-check"></i> E-commerce & payment gateway</li>
+            <li><i class="fas fa-check"></i> Revisi unlimited</li>
+            <li><i class="fas fa-check"></i> Pengerjaan 14–30 hari</li>
+            <li><i class="fas fa-check"></i> Support 30 hari setelah launch</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline pricing-btn">Pilih Premium</a>
+        </div>
+      </div>
+      <p class="pricing-note reveal">* Harga bersifat estimasi dan dapat berubah sesuai kebutuhan proyek. <a href="#contact" style="color: var(--accent-primary); font-weight: 600;">Hubungi saya</a> untuk konsultasi gratis.</p>
     </div>
   </section>
 
