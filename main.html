@@ -1024,6 +1024,66 @@
       transform: translateY(-4px);
     }
 
+    /* ========== WHATSAPP FLOAT ========== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #25d366;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      font-size: 1.6rem;
+      cursor: pointer;
+      z-index: 999;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      transition: var(--transition);
+      text-decoration: none;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+      color: #fff;
+    }
+
+    .whatsapp-float .wa-tooltip {
+      position: absolute;
+      left: 70px;
+      background: #fff;
+      color: #333;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      white-space: nowrap;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: var(--transition);
+      pointer-events: none;
+    }
+
+    .whatsapp-float .wa-tooltip::before {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 6px solid transparent;
+      border-right-color: #fff;
+    }
+
+    .whatsapp-float:hover .wa-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
     /* ========== ANIMATIONS ON SCROLL ========== */
     .reveal {
       opacity: 0;
@@ -1167,6 +1227,26 @@
       .cta-buttons .btn {
         width: 100%;
         justify-content: center;
+      }
+
+      .whatsapp-float {
+        bottom: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+      }
+
+      .whatsapp-float .wa-tooltip {
+        display: none;
+      }
+
+      #scrollTop {
+        bottom: 20px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
       }
     }
 
@@ -1612,7 +1692,7 @@
           <h4>Contact Info</h4>
           <ul>
             <li><i class="fas fa-envelope me-2" style="color: var(--accent-primary);"></i> joh@johscreatives.com</li>
-            <li><i class="fab fa-whatsapp me-2" style="color: var(--accent-primary);"></i> +62 812 3456 7890</li>
+            <li><i class="fab fa-whatsapp me-2" style="color: var(--accent-primary);"></i> +62 821-1191-5723</li>
             <li><i class="fas fa-map-marker-alt me-2" style="color: var(--accent-primary);"></i> Jakarta, Indonesia</li>
           </ul>
         </div>
@@ -1631,6 +1711,12 @@
   <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/6282111915723?text=Halo%20Joh's%20Creatives%2C%20saya%20tertarik%20untuk%20diskusi%20proyek." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-tooltip">💬 Chat di WhatsApp</span>
+  </a>
 
   <!-- JAVASCRIPT -->
   <script>
