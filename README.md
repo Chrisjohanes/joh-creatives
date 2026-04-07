@@ -1,166 +1,133 @@
-# 🌟 Aurora Creative Agency - Professional Digital Solutions
+# 🚀 Joh's Creatives - Crafting Code, Bringing Ideas to Life
 
-A modern, professional website built with Bootstrap 5, designed for enterprise-level digital agency presentations.
+Professional portfolio & landing page for freelance web development services. Built with modern dark theme and orange/amber accent design.
 
 ## ✨ Features
 
-### 🎨 Modern UI/UX
-- **Responsive Design**: Fully responsive across all devices
-- **Bootstrap 5**: Latest Bootstrap framework with custom components
-- **Smooth Animations**: AOS (Animate On Scroll) library integration
-- **Professional Color Scheme**: Gradient-based modern design
-- **Custom CSS Variables**: Easy to customize and maintain
+### 🎨 Modern Design
+- **Dark Theme** with warm orange/amber gradient accents
+- **Fully Responsive** — mobile-friendly with hamburger navigation
+- **Smooth Animations** — scroll-reveal effects, counter animations, hover transitions
+- **Custom CSS** — no framework dependency, lightweight and fast
+- **Google Fonts** — Inter typeface for modern typography
+- **Font Awesome** — icon integration throughout
 
-### 🚀 Interactive Features
-- **Preloader Animation**: Smooth page loading experience
-- **Sticky Navigation**: Smart navbar that changes on scroll
-- **Counter Animations**: Animated statistics display
-- **Portfolio Filtering**: Interactive project filtering
-- **Modal Popups**: Detailed project view in modals
-- **Form Validation**: Real-time client-side validation
-- **Back to Top Button**: Easy navigation
-- **Hover Effects**: Professional hover animations
+### 🛠️ Tech Stack Showcase
+- **JavaScript** — React, Vue.js, Vanilla JS, Node.js
+- **Backend** — Laravel, PHP, MySQL, REST API
+- **Front-End** — HTML5, CSS3, Bootstrap, Tailwind
+- **Tools** — Git, VS Code
 
-### 📱 Pages Included
-1. **Home Page**: Hero section, services preview, portfolio showcase, testimonials, CTA
-2. **Services Page**: Detailed services, process workflow, pricing tables, FAQ
-3. **Portfolio Page**: Filterable gallery, project modals, statistics
-4. **Contact Page**: Contact form, map, business hours, social links
+### 📱 Sections Included
+1. **Hero** — Animated headline with stats counter (projects, clients, experience)
+2. **Services** — 4 service cards: JavaScript Dev, Laravel/PHP, Static Sites, Custom Front-End
+3. **Portfolio** — 4 fictional project showcases with hover overlays
+4. **Tech Stack** — Technology badges showing skills and tools
+5. **About Me** — Profile photo, bio, collaboration values
+6. **CTA** — Call-to-action for project discussions
+7. **Contact** — Form with simulated submission (alert notification toast)
+8. **Footer** — Social links, quick navigation, contact info
 
-### 🛠️ Technical Stack
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Framework**: Bootstrap 5.3.3
-- **Animations**: AOS Library
-- **Icons**: Font Awesome 6.5.1
-- **Backend**: Node.js with Express.js
-- **Fonts**: Google Fonts (Poppins)
+## 📦 Usage
 
-## 📦 Installation
+### Option 1: Open Directly
+Just double-click `main.html` — no server required.
 
-1. **Clone or download the project**
-```bash
-cd aurora-agency-main
-```
-
-2. **Install dependencies**
+### Option 2: Run with Node.js Server
 ```bash
 npm install
-```
-
-3. **Start the development server**
-```bash
 npm start
 ```
-
-4. **Open your browser**
-```
-http://localhost:3000
-```
+Then open `http://localhost:3000`
 
 ## 📁 Project Structure
 
 ```
-aurora-agency-main/
-├── index.html              # Home page
-├── services.html           # Services page
-├── portofolio.html        # Portfolio page
-├── contact.html           # Contact page
-├── style.css              # Custom CSS styles
-├── server.js              # Express server
-├── package.json           # Dependencies
+joh-creatives/
+├── main.html                 # Main portfolio landing page (all-in-one)
+├── contact.html              # Contact page (legacy)
+├── services.html             # Services page (legacy)
+├── portofolio.html           # Portfolio page (legacy)
+├── style.css                 # Custom CSS styles (legacy)
+├── server.js                 # Express server
+├── package.json              # Dependencies
+├── .gitignore                # Git ignore rules
+├── README.md                 # This file
+├── foto_profil/
+│   └── Christian Johanes.jpg # Profile photo
 └── public/
+    ├── images/
+    │   └── project1.jpg
     └── js/
-        ├── main.js        # Main JavaScript
-        └── portofolio.js  # Portfolio functionality
+        ├── main.js
+        └── portofolio.js
 ```
 
-## 🎯 Key Features Breakdown
+## 🎯 Key Sections Breakdown
 
-### Home Page
-- Animated hero section with gradient background
-- Statistics counter section
-- Client logos/trust badges
-- Services preview cards with icons
-- Portfolio showcase with hover effects
-- Client testimonials
-- Call-to-action sections
+### Hero Section
+- Animated badge showing availability
+- Tagline: "Crafting Code, Bringing Ideas to Life"
+- CTA buttons: "Diskusikan Proyek" and "Lihat Portofolio"
+- Live counter stats: projects, clients, experience
 
-### Services Page
-- Detailed service descriptions
-- Feature lists for each service
-- 4-step process workflow
-- 3-tier pricing tables
-- FAQ accordion
-- Service-specific CTAs
+### Services Section
+- **JavaScript Development** — React, Vue.js, Vanilla JS, Node.js
+- **Laravel / PHP Development** — Laravel, PHP, MySQL, REST API
+- **Static Website & Front-End** — HTML5, CSS3, Bootstrap, Tailwind
+- **Custom Front-End Solutions** — UI kits, dashboards, responsive design
 
-### Portfolio Page
-- Category filtering system (All, Web, E-Commerce, Branding, Apps)
-- 9 sample projects with images
-- Project detail modals with:
-  - Full descriptions
-  - Key features list
-  - Technologies used
-  - Results achieved
-  - Live demo links
-- Project statistics section
+### Portfolio Section
+- E-Commerce Admin Dashboard (Laravel + Vue.js)
+- SaaS Analytics Platform (React + Node.js)
+- Premium Restaurant Website (HTML + CSS + JS)
+- Fashion E-Commerce Store (Laravel + Bootstrap)
 
-### Contact Page
-- Contact information cards
-- Detailed contact form with:
-  - Name, email, phone
-  - Company name
-  - Service selection
-  - Budget range
-  - Project details
-  - Newsletter subscription
-- Real-time form validation
-- Google Maps integration
-- Business hours display
-- Social media links
-- FAQ section
+### About Me Section
+- Profile photo with floating experience badge
+- Core values: Open Communication, Unlimited Revisions, On-Time Delivery, Collaboration
+- Personal bio highlighting dedication to quality
+
+### Contact Section
+- Contact info: email, WhatsApp, location, response time
+- Form fields: name, email, subject, message
+- Simulated submission with success/error toast notification
 
 ## 🎨 Customization
 
 ### Colors
-Edit CSS variables in `style.css`:
+Edit CSS variables in `<style>` section of `main.html`:
 ```css
 :root {
-  --primary-color: #0d6efd;
-  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --bg-primary: #0a0a0f;
+  --accent-primary: #f59e0b;
+  --accent-secondary: #f97316;
+  --accent-gradient: linear-gradient(135deg, #f59e0b 0%, #f97316 50%, #ef4444 100%);
 }
 ```
 
 ### Content
-- Update text content directly in HTML files
-- Replace images by updating `src` attributes
-- Modify project data in `public/js/portofolio.js`
+- Update text content directly in `main.html`
+- Replace profile photo in `foto_profil/` directory
+- Modify portfolio project images and descriptions
+- Adjust stats counter values via `data-target` attributes
 
 ### Contact Form
-The form currently logs submissions to console. To integrate with email:
-1. Use services like EmailJS, SendGrid, or Nodemailer
-2. Update the `/api/contact` endpoint in `server.js`
-3. Add database integration if needed
+The form simulates submission with a toast notification. To integrate real email:
+1. Use services like EmailJS, Formspree, or Netlify Forms
+2. Or connect to `/api/contact` endpoint in `server.js`
 
-## 🌐 API Endpoints
+## 🌐 API Endpoints (if using server)
 
-- `POST /api/contact` - Submit contact form
-- `POST /api/newsletter` - Subscribe to newsletter
-- `GET /api/services` - Get all services
-- `GET /api/health` - Health check
+- `POST /api/contact` — Submit contact form
+- `GET /api/health` — Health check
 
 ## 📱 Responsive Breakpoints
 
-- Mobile: < 768px
-- Tablet: 768px - 991px
-- Desktop: ≥ 992px
-
-## 🎭 Animation Features
-
-- **Preloader**: Smooth fade-out on page load
-- **AOS**: Scroll-triggered animations
-- **Counter**: Number counting animation
-- **Hover Effects**: Cards, buttons, icons
-- **Smooth Scrolling**: Anchor link navigation
+- Mobile: < 480px
+- Mobile+: < 768px
+- Tablet: 768px - 1024px
+- Desktop: ≥ 1024px
 
 ## 🔧 Browser Support
 
@@ -170,33 +137,21 @@ The form currently logs submissions to console. To integrate with email:
 - Edge (latest)
 - Mobile browsers
 
-## 📝 License
-
-This project is open source and available for personal and commercial use.
-
-## 👨‍💻 Developer Notes
-
-- All images use Unsplash for high-quality photos
-- Icons from Font Awesome 6.5.1
-- Google Fonts: Poppins for modern typography
-- Bootstrap 5.3.3 for responsive grid system
-
 ## 🚀 Future Enhancements
 
-- Database integration for contact forms
+- Real contact form integration (EmailJS / Formspree)
 - Blog section
-- Team member profiles
-- Live chat integration
-- Multi-language support
-- Admin dashboard
-- Testimonial management system
+- Client testimonials carousel
+- Project case study pages
+- Multi-language support (EN/ID)
+- Dark/Light theme toggle
 
-## 📞 Support
+## 📞 Contact
 
-For questions or issues, please contact:
-- Email: hello@aurora.agency
-- Phone: +62 812 3456 7890
+- **Email**: joh@johscreatives.com
+- **WhatsApp**: +62 812 3456 7890
+- **Location**: Jakarta, Indonesia
 
 ---
 
-**Built with ❤️ using Bootstrap 5, Node.js, and modern web technologies**
+**Built with ❤️ by Christian Johanes — Joh's Creatives**
